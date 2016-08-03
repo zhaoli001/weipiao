@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; }
+
+@font-face {
+  font-family: "raphaelicons";
+  src: url(../fonts/raphaelicons-webfont.eot);
+  src: url(../fonts/raphaelicons-webfont.ttf) format("truetype"), url(../fonts/raphaelicons-webfont.svg) format("svg"), url(../fonts/raphaelicons-webfont.woff) format("woff"); }
+html, body {
+  width: 100%;
+  height: 100%; }
+
+/*# sourceMappingURL=public.css.map */
