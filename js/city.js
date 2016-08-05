@@ -98,10 +98,11 @@
 	$("#search").on("input propertychange",function(){
 		 Sval=$(this).val();
 		var str='';
+		var reg=new RegExp("^"+Sval,"i")
 		if(Sval!=""){
 			for(var i=0;i<tempList.length;i++){
 				tempList[i].list.forEach(function(j){						
-					if(Sval==j[2].substr(0,Sval.length)){
+					if(j[2].substr(0,Sval.length).search(reg)!=-1){
 						str+='<li class="Scity" data="'+j[1]+'">'+j[0]+'</li>';
 					}else if(Sval==j[0].substr(0,Sval.length)){
 						str+='<li class="Scity" data="'+j[1]+'">'+j[0]+'</li>';
